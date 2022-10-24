@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-10-23 17:08:39</p>
+                <p class='attribute'><strong>Duration: </strong>32.34 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 2, Pass: 0, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>TestCases.SignIn_test_file.SignIn</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_amazon_sign_in</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002A1ED3+2236115]
+	Ordinal0 [0x002392F1+1807089]
+	Ordinal0 [0x001466FD+812797]
+	Ordinal0 [0x0012DFFA+712698]
+	Ordinal0 [0x0019506B+1134699]
+	Ordinal0 [0x001A514A+1200458]
+	Ordinal0 [0x001918A6+1120422]
+	Ordinal0 [0x0016A73D+960317]
+	Ordinal0 [0x0016B71F+964383]
+	GetHandleVerifier [0x0054E7E2+2743074]
+	GetHandleVerifier [0x005408D4+2685972]
+	GetHandleVerifier [0x00332BAA+532202]
+	GetHandleVerifier [0x00331990+527568]
+	Ordinal0 [0x0024080C+1837068]
+	Ordinal0 [0x00244CD8+1854680]
+	Ordinal0 [0x00244DC5+1854917]
+	Ordinal0 [0x0024ED64+1895780]
+	BaseThreadInitThunk [0x7536FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77067BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77067B8E+238]
+	(No symbol) [0x00000000]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Elen\PycharmProjects\SeleniumAmazonProject\TestCases\SignIn_test_file.py", line 16, in test_amazon_sign_in
+    self.driver.get("https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3Fref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&")
+  File "C:\Users\Elen\PycharmProjects\SeleniumAmazonProject\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 441, in get
+    self.execute(Command.GET, {'url': url})
+  File "C:\Users\Elen\PycharmProjects\SeleniumAmazonProject\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Elen\PycharmProjects\SeleniumAmazonProject\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002A1ED3+2236115]
+	Ordinal0 [0x002392F1+1807089]
+	Ordinal0 [0x001466FD+812797]
+	Ordinal0 [0x0012DFFA+712698]
+	Ordinal0 [0x0019506B+1134699]
+	Ordinal0 [0x001A514A+1200458]
+	Ordinal0 [0x001918A6+1120422]
+	Ordinal0 [0x0016A73D+960317]
+	Ordinal0 [0x0016B71F+964383]
+	GetHandleVerifier [0x0054E7E2+2743074]
+	GetHandleVerifier [0x005408D4+2685972]
+	GetHandleVerifier [0x00332BAA+532202]
+	GetHandleVerifier [0x00331990+527568]
+	Ordinal0 [0x0024080C+1837068]
+	Ordinal0 [0x00244CD8+1854680]
+	Ordinal0 [0x00244DC5+1854917]
+	Ordinal0 [0x0024ED64+1895780]
+	BaseThreadInitThunk [0x7536FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77067BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77067B8E+238]
+	(No symbol) [0x00000000]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_amazon_sign_in</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">WebDriverException: Message: disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002A1ED3+2236115]
+	Ordinal0 [0x002392F1+1807089]
+	Ordinal0 [0x001466FD+812797]
+	Ordinal0 [0x0013798A+752010]
+	Ordinal0 [0x0012C754+706388]
+	Ordinal0 [0x0012D564+709988]
+	Ordinal0 [0x0019A655+1156693]
+	Ordinal0 [0x00191A53+1120851]
+	Ordinal0 [0x0016A73D+960317]
+	Ordinal0 [0x0016B71F+964383]
+	GetHandleVerifier [0x0054E7E2+2743074]
+	GetHandleVerifier [0x005408D4+2685972]
+	GetHandleVerifier [0x00332BAA+532202]
+	GetHandleVerifier [0x00331990+527568]
+	Ordinal0 [0x0024080C+1837068]
+	Ordinal0 [0x00244CD8+1854680]
+	Ordinal0 [0x00244DC5+1854917]
+	Ordinal0 [0x0024ED64+1895780]
+	BaseThreadInitThunk [0x7536FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77067BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77067B8E+238]
+	(No symbol) [0x00000000]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\Elen\PycharmProjects\SeleniumAmazonProject\TestCases\SignIn_test_file.py", line 32, in tearDown
+    self.driver.close()
+  File "C:\Users\Elen\PycharmProjects\SeleniumAmazonProject\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 551, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\Elen\PycharmProjects\SeleniumAmazonProject\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Elen\PycharmProjects\SeleniumAmazonProject\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: unable to connect to renderer
+  (failed to check if window was closed: disconnected: unable to connect to renderer)
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x002A1ED3+2236115]
+	Ordinal0 [0x002392F1+1807089]
+	Ordinal0 [0x001466FD+812797]
+	Ordinal0 [0x0013798A+752010]
+	Ordinal0 [0x0012C754+706388]
+	Ordinal0 [0x0012D564+709988]
+	Ordinal0 [0x0019A655+1156693]
+	Ordinal0 [0x00191A53+1120851]
+	Ordinal0 [0x0016A73D+960317]
+	Ordinal0 [0x0016B71F+964383]
+	GetHandleVerifier [0x0054E7E2+2743074]
+	GetHandleVerifier [0x005408D4+2685972]
+	GetHandleVerifier [0x00332BAA+532202]
+	GetHandleVerifier [0x00331990+527568]
+	Ordinal0 [0x0024080C+1837068]
+	Ordinal0 [0x00244CD8+1854680]
+	Ordinal0 [0x00244DC5+1854917]
+	Ordinal0 [0x0024ED64+1895780]
+	BaseThreadInitThunk [0x7536FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77067BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77067B8E+238]
+	(No symbol) [0x00000000]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 2, Pass: 0, Error: 2 -- Duration: 32.34 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
